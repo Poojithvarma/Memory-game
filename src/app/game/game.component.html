@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <h1 class="text-center">Memory Game</h1><br><br>
+
+
+    <img src="../favicon.ico" alt="logo" class="img-responsive center-block img-thumbnail" /><br><br>
+
+    <!-- ACCOMPLISHMENTS SECTION -->
+    <label class="text-info" for="list-accomplishments">Accomplishments:</label>
+    <p class="text-warning" *ngIf="players.length === 0">there is no accomplishments yet!</p>
+    <ul class="list-group" style="width: 290px;" id="list-accomplishments">
+      <li class="list-group-item" *ngFor="let player of players | sortPlayers">
+        {{player.name}}, finished at -
+        <span class="text-warning">{{player.minutes | countPipe}}:{{player.seconds | countPipe}}</span>
+        , on - <span class="text-danger">{{player.size === 4 ? '4x4' : '6x6'}}</span>.</li>
+    </ul>
+    <ul>
+        <button class="common-btn btn"  routerLink='/board'>board</button></ul>
+</div>
+
