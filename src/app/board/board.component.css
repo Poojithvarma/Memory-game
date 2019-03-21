@@ -38,3 +38,11 @@
   font-size: 75px;
   text-shadow: 0 0 15px wheat;
   }
+  .counter-text {
+    text-shadow: 0 0 10px gold;
+    font-family: fantasy;
+    color: aquamarine;
+    opacity: 0.8;
+    text-align: center;
+    font-size: 35px;
+  }
