@@ -89,8 +89,8 @@ export class AuthService {
 
   // Auth logic to run auth providers
   AuthLogin(provider) {
-    return this.afAuth.auth.signInWithPopup(provider)
-    .then((result) => {
+     return this.afAuth.auth.signInWithPopup(provider)
+         .then((result) => {
        this.ngZone.run(() => {
           this.router.navigate(['dashboard']);
         })
