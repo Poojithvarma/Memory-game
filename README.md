@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
 
-## Quick Look: https://memory-game-d94d3.firebaseapp.com/
+## Quick Look: https://memory-game-c1922.firebaseapp.com/sign-in
 
 ## Installtion Steps
 
